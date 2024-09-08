@@ -1,8 +1,7 @@
 package com.example.di.sample
 
-import com.example.di.`interface`.UserService
+import com.example.di.demein.UserService
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Component
 
 /**

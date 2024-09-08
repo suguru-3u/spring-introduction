@@ -1,4 +1,4 @@
-package com.example.di.`interface`
+package com.example.di.demein
 
 interface PasswordEncoder {
     fun encode(rawPassword:String)

@@ -1,13 +1,11 @@
 package com.example.di.sample
 
-import com.example.di.`interface`.UserRepository
+import com.example.di.demein.UserRepository
+import org.springframework.stereotype.Component
 
+@Component
 class UserRepositoryIml: UserRepository {
-    override fun countByUsername(username: String): Int {
-        return 10
-    }
-
-    override fun save(user: String): String {
-        return "Hello"
+    override fun save(user: String) {
+        println("Hello")
     }
 }

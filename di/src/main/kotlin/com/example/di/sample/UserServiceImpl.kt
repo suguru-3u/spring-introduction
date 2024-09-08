@@ -1,8 +1,8 @@
 package com.example.di.sample
 
-import com.example.di.`interface`.PasswordEncoder
-import com.example.di.`interface`.UserRepository
-import com.example.di.`interface`.UserService
+import com.example.di.demein.PasswordEncoder
+import com.example.di.demein.UserRepository
+import com.example.di.demein.UserService
 import org.springframework.stereotype.Component
 
 /**
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component
  * ただし、コンストラクタが一般であり安全と言われている
  */
 
-
+@Component
 class UserServiceImpl(
     val userRepository: UserRepository, val passwordEncoder: PasswordEncoder
 ) : UserService {
